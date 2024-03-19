@@ -12,7 +12,6 @@ public class KatoExec_Chapter18 {
 		
 		//メソッド実行
 		//太郎
-		taro.commonIntroduce();
 		taro.setGivenName();
 		taro.execIntroduce();
 		
@@ -20,7 +19,6 @@ public class KatoExec_Chapter18 {
 		
 		
 		//一郎
-		ichiro.commonIntroduce();
 		ichiro.setGivenName();
 		ichiro.execIntroduce();
 		
@@ -28,7 +26,6 @@ public class KatoExec_Chapter18 {
 		
 		
 		//花子
-		hanako.commonIntroduce();
 		hanako.setGivenName();
 		hanako.execIntroduce();
 
