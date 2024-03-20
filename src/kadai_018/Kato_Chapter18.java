@@ -16,6 +16,7 @@ abstract class Kato_Chapter18 {
 		
 		System.out.println("名前は" + familyName + givenName + "です");
 		System.out.println("住所は" + address + "です");
+		
 	}
 	
 	//個別の紹介を出力

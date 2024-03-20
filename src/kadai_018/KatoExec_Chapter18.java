@@ -15,16 +15,12 @@ public class KatoExec_Chapter18 {
 		taro.setGivenName();
 		taro.execIntroduce();
 		
-		System.out.println("");
-		
-		
+				
 		//一郎
 		ichiro.setGivenName();
 		ichiro.execIntroduce();
 		
-		System.out.println("");
-		
-		
+				
 		//花子
 		hanako.setGivenName();
 		hanako.execIntroduce();
