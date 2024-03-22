@@ -1,4 +1,4 @@
-package kadai_21;
+package kadai_021;
 
 public class DictionaryExec_Chapter21 {
 
