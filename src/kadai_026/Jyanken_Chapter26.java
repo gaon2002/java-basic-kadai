@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Jyanken_Chapter26 {
 	
 	
-	//機械が出すじゃんけんの手（配列）を作る
+	//機械が出すじゃんけんの手（配列）を作る：匿名クラス
 	ArrayList<String> machineChoice = new ArrayList<String>() {
 		{
 		add("r");
@@ -16,7 +16,7 @@ public class Jyanken_Chapter26 {
 		}
 	};
 	
-	//自分と対戦相手のじゃんけんの手を出力する処理
+	//自分と対戦相手のじゃんけんの手を出力する処理：匿名クラス
 	HashMap<String,String> jankenKey = new HashMap<String,String>();{
 		{
 		jankenKey.put("r","グー");
@@ -44,7 +44,7 @@ public class Jyanken_Chapter26 {
 			
 		}else {
 			System.out.println("正しい値ではありません、再入力してください");
-			myChoice = scanner.next();	//値の再代入
+			myChoice = scanner.next();	//値の再代入を行う
 		}
 		//正しければmyChoiceに値を代入して戻り値を設定
 		return myChoice;
@@ -62,8 +62,10 @@ public class Jyanken_Chapter26 {
 	
 	public void playGame(String myChoice, String machineResult) {
 		
+		System.out.println("");
 		System.out.println("自分の手は" + jankenKey.get(myChoice) + "、" + "相手の手は" + jankenKey.get(machineResult));
 		
+		System.out.println("---じゃんけん結果---");
 		if((myChoice.equals("r")) && (machineResult.equals("r"))) {
 			System.out.println("あいこです");
 		}else if((myChoice.equals("r")) && (machineResult.equals("s"))) {
