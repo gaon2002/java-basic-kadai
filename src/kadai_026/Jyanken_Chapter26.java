@@ -8,7 +8,7 @@ public class Jyanken_Chapter26 {
 	
 	
 	//機械が出すじゃんけんの手（配列）を作る：匿名クラス
-	ArrayList<String> machineChoice = new ArrayList<String>() {
+	private ArrayList<String> machineChoice = new ArrayList<String>() { //machineChoice：フィールド変数
 		{
 		add("r");
 		add("s");
@@ -17,7 +17,7 @@ public class Jyanken_Chapter26 {
 	};
 	
 	//自分と対戦相手のじゃんけんの手を出力する処理：匿名クラス
-	HashMap<String,String> jankenKey = new HashMap<String,String>();{
+	private HashMap<String,String> jankenKey = new HashMap<String,String>();{ //jankenKey：フィールド変数
 		{
 		jankenKey.put("r","グー");
 		jankenKey.put("s","チョキ");
@@ -33,7 +33,7 @@ public class Jyanken_Chapter26 {
 		Scanner scanner = new Scanner(System.in);
 		
 		//自分のじゃんけんの手を入力し、値を取得する
-		String myChoice = scanner.next();
+		String myChoice = scanner.next(); //
 		
 		//入力した文字の確認
 		System.out.println("入力した文字は" + myChoice);
