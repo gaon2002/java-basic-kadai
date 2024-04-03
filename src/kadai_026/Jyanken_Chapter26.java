@@ -8,7 +8,7 @@ public class Jyanken_Chapter26 {
 	
 	
 	//機械が出すじゃんけんの手（配列）を作る：匿名クラス
-	private ArrayList<String> machineChoice = new ArrayList<String>() { //machineChoice：フィールド変数
+	private ArrayList<String> machineChoice = new ArrayList<String>() { //machineChoice：フィールド変数（必ずカプセル化を行う）
 		{
 		add("r");
 		add("s");
