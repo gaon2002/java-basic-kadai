@@ -46,10 +46,15 @@ public class Jyanken_Chapter26 {
 			System.out.println("正しい値ではありません、再入力してください");
 			myChoice = scanner.next();	//値の再代入を行う
 		}
+		//Scannerクラスのオブジェクトを終了する
+		scanner.close();
+
 		//正しければmyChoiceに値を代入して戻り値を設定
 		return myChoice;
+		
+		
 	}
-	
+
 	
 	//対戦相手のじゃんけんの手を乱数で選ぶ
 	public String getRandom() {
